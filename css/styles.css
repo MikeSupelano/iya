@@ -33,4 +33,12 @@ body p {
   width: 100%;
   height: auto;
 }
+
+.content-1 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffffaa), to(#ffffffaa)), url(../img/logo-left-gray.svg);
+  background-image: linear-gradient(#ffffffaa, #ffffffaa), url(../img/logo-left-gray.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 35vw 50%;
+}
 /*# sourceMappingURL=styles.css.map */

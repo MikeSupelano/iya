@@ -27,3 +27,10 @@ body{
         }
     }
 }
+
+.content-1{
+    background-image: linear-gradient( #ffffffaa, #ffffffaa), url(../img/logo-left-gray.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 35vw 50%;
+}
