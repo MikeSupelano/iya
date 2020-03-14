@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="stylesheet" type="text/css" href="css/animate.css">
     <title>Ingenio y arquitectura</title>
@@ -10,7 +11,7 @@
 <body>
 
     <nav id="main-navbar">
-        <div class="logo-header animated fadeInLeft">
+        <div class="logo-header">
             <img src="img/full_horizontal.svg" alt="">
         </div>
         <ul>
@@ -23,17 +24,18 @@
     
     <div class="col-12 hero row">
         <div class="col-md-6 logo" id="inicio">
-            <img src="img/full_horizontal.svg" alt="">
+            <img src="img/full_horizontal.svg" class="wow animated fadeIn" alt="">
         </div>
         <div class="col-md-6 content">
-            <h3>Mantenimiento</h3>
-            <h3>Impermeabilización</h3>
-            <h3>Remodelaciones</h3>
-            <h3>Instalaciones eléctricas, voz y datos</h3>
-            <h3>Techos y Cubiertas</h3>
+            <h3 class="wow animated fadeInRight delay-p1">Mantenimiento</h3>
+            <h3 class="wow animated fadeInRight delay-p2">Impermeabilización</h3>
+            <h3 class="wow animated fadeInRight delay-p3">Remodelaciones</h3>
+            <h3 class="wow animated fadeInRight delay-p4">Instalaciones eléctricas, voz y datos</h3>
+            <h3 class="wow animated fadeInRight delay-p5">Techos y Cubiertas</h3>
             <hr>
-            <h3 class="resalte"><a href="#servicios">Ver todos los servicios</a></h3>
-            <h3 class="resalte"><a href="#contacto">Solicitar una cotización ahora</a></h3>
+            <h3 class="resalte "><a href="#porque">¿Por qué escogernos?</a></h3>
+            <h3 class="resalte "><a href="#servicios">Ver todos los servicios</a></h3>
+            <h3 class="resalte "><a href="#contacto">Solicitar una cotización ahora</a></h3>
         </div>
     </div>
     <div class="container-fluid px-5 content-1" id="content">
@@ -44,18 +46,18 @@
                 </div>
                 <div class="col-md-8">
                     <div class="contenedor-img-sol">
-                        <img src="img/remodelaciones.jpeg" alt="" >
-                        <img src="img/Remodelacion-fin.jpeg" alt="">
-                        <img src="img/instalaciones-2.jpeg" alt="">
+                        <img class="wow zoomIn delay-p1" src="img/remodelaciones.jpeg" alt="" >
+                        <img class="wow zoomIn delay-p3" src="img/Remodelacion-fin.jpeg" alt="">
+                        <img class="wow zoomIn delay-p5" src="img/instalaciones-2.jpeg" alt="">
                     </div>
                 </div>
             </div>
             <div class="row py-5">
                 <div class="col-md-6">
                     <div class="contenedor-img-sol">
-                        <img src="img/estructura-techo.jpeg " alt="">
-                        <img src="img/Techos-2.jpeg" alt="">
-                        <img src="img/Techos.jpeg" alt="">
+                        <img class="wow zoomIn delay-p1" src="img/estructura-techo.jpeg " alt="">
+                        <img class="wow zoomIn delay-p3" src="img/Techos-2.jpeg" alt="">
+                        <img class="wow zoomIn delay-p5" src="img/Techos.jpeg" alt="">
                     </div>
                 </div>
                 <div class="col-md-6" style="padding-left:1rem;box-sizing:border-box">
@@ -77,10 +79,10 @@
             </div>
             <div class="row clientes">
                 <h3>Algunos de nuestros clientes</h3>
-                <div class="container-imagen"><img src="img/logo-cliente-1.png" alt=""></div>
-                <div class="container-imagen"><img src="img/logo-cliente-2.png" alt=""></div>
-                <div class="container-imagen"><img src="img/logo-cliente-3.png" alt=""></div>
-                <div class="container-imagen"><img src="img/logo-cliente-4.png" alt=""></div>
+                <div class="container-imagen wow animated flipInX delay-p2"><img src="img/logo-cliente-1.png" alt=""></div>
+                <div class="container-imagen wow animated flipInX delay-p2"><img src="img/logo-cliente-2.png" alt=""></div>
+                <div class="container-imagen wow animated flipInX delay-p4"><img src="img/logo-cliente-3.png" alt=""></div>
+                <div class="container-imagen wow animated flipInX delay-p4"><img src="img/logo-cliente-4.png" alt=""></div>
             </div>
             <div class="row">
                 <p>INGYARQ, Con respaldo de sus marcas reconocidas y comprometido con sus políticas de servicio, se asegurará durante cualquier contrato a realizar de contar con personal altamente calificado acompañados de un residente Profesional y/o técnico, por tiempo completo que se someterá a las labores de Gerencia e Interventora de la obra.
@@ -90,62 +92,149 @@
                     <li>Estrictas medidas de seguridad.</li>
                     <li>Materiales con estándares de calidad.</li>
                     <li>Cumplimiento en las fechas estipuladas dentro del contrato.</li>
+                    <li>Personal calificado para trabajo en alturas</li>
+                    <li>Personal certificado SENA - SIKA</li>
                 </ul>
             </div>
         </div>
     </div>
 
-    <div class="container-fluid content-1" id="servicios">
+    <main class="container-fluid content-1" id="servicios">
         <div class="titulo">
-            <h2>Servicios</h2>
+            <h2>Nuestros Servicios</h2>
         </div>
         <div class="container">
             <div class="row py-5">
                 <div class="col-md-6">
-                    <p>INGENIO Y ARQUITECTURA S.A.S  es una empresa Colombiana,  conformada por un excelente grupo de trabajo, con el propósito de ofrecer sus servicios en el diseño, construcción, asesorías, remodelación, rehabilitación, innovación, adecuación, y acondicionamiento de construcciones antiguas y nuevas, junto con la comercialización de materiales relacionados con la construcción.</p>
+                    <div class="card mantenimiento wow fadeInUp delay-p2">
+                        <div class="nombre">
+                            Mantenimiento de fachadas
+                        </div>
+                    </div>                
                 </div>
-                <div class="col-md-6"></div>
+                <div class="col-md-6">
+                    <div class="card techos wow fadeInUp delay-p2">
+                        <div class="nombre">
+                            Techos y cubiertas
+                        </div>
+                    </div>   
+                </div>
             </div>
             <div class="row py-5">
-                <div class="col-md-6"></div>
                 <div class="col-md-6">
-                    <p>Nuestra empresa se preocupa de la capacitación y conformación del selecto personal calificado relacionado en nuestro campo para reflejar un excelente servicio y calidad de trabajo, sin dejar a un lado los principios, valores y recursos naturales, lo cual nos caracterizan, Dando un servicio de calidad a precios competitivos con un plus de confianza para nuestros clientes en el desarrollo de los proyectos y el ejercicio de los presupuestos, siempre cuidando el proyecto de construcción como propio; además de tomar en cuenta que las construcciones se realicen en el marco de la tecnología más avanzada, en cuanto a su diseño y estructuración, así como procurando que las edificaciones se integren al medio ambiente causando el menor impacto posible.</p>
+                    <div class="card instalaciones wow fadeInUp delay-p4">
+                        <div class="nombre">
+                            Instalaciones electricas, voz y datos
+                        </div>
+                    </div>                
+                </div>
+                <div class="col-md-6">
+                    <div class="card remodelacion wow fadeInUp delay-p4">
+                        <div class="nombre">
+                            Remodelaciones
+                        </div>
+                    </div>   
                 </div>
             </div>
             <div class="row py-5">
                 <div class="col-md-6">
-                    <p>Tenemos la experiencia necesaria para desarrollar proyectos bajo las más diversas condiciones y en el momento que nuestros clientes lo requieran, incluso en situaciones de urgencia y con la mejor relación costo-beneficio. 
-                        <br>
-                        Adicionalmente, cuenta con la representación comercial de importantes empresas Nacionales y Extranjeras,  Fabricantes de materiales reconocidos y de alta calidad, con las ventajas que esto representa, además de suministrar materiales, relacionados con la construcción.</p>
+                    <div class="card impermeabilizacion wow fadeInUp delay-p5">
+                        <div class="nombre">
+                            Impermeabilización: Fachadas, Terrazas, Tanques, Parqueaderos
+                        </div>
+                    </div>  
+                <div class="col-md-6">
+
                 </div>
-                <div class="col-md-6"></div>
+            </div>
+            <div class="row py-5">
+                <p>
+                    Tambien contamos con experiencia y profesionales en las siguientes áreas:
+                    <ul>
+                        <li><b>ASESORIAS:</b> Licencias de construcción, Estudio, Proyección, Ejecución, Diseños constructivos.</li>
+                        <li><b>RECORRIDOS VIRTUALES 3D:</b> Animaciones, Renders.               </li>
+                        <li><b>DIGITALIZACION DE PLANOS ARQUITECTONICOS:</b> Levantamientos arquitectónicos, Amoblados, eléctricos, hidráulicos y sanitarios, estructurales, etc..                   </li>
+                        <li><b>MAMPOSTERIA:</b> Pañetes.               </li>
+                        <li><b>ESTUCO:</b> Plástico, veneciano, Pintura, Acabados.               </li>
+                        <li><b>INSTALACIONES HIDRAULICAS:</b> Acometidas.               </li>
+                        <li><b>REDES ELECTRICAS, GAS Y TELEFONO:</b> Acometidas.               </li>
+                        <li><b>DRYWALL:</b> Techos, Muros.               </li>
+                        <li><b>FACHADAS:</b> Lavada.               </li>
+                        <li><b>IMPERMEABILIZACION:</b> Terrazas, Muros.               </li>
+                        <li><b>CARPINTERIA METALICA:</b> Puertas, Ventanas, Cerramientos,          aluminio, etc..               </li>
+                        <li><b>ENCHAPES:</b> Cocinas, Baños, Fachadas.               </li>
+                        <li><b>PISOS:</b> Adoquines, Gres, Cerámica, Porcelanato, Caucho, Madera, Mármol, etc..               </li>
+                        <li><b>TRABAJOS LOCATIVOS:</b> Distritales, Privados, Particulares.               </li>
+                        <li><b>REMODELACION DE ESPACIOS:</b> Exteriores, Interiores.               </li>
+                        <li><b>CARPINTERIA MADERA:</b> Puertas, Ventanas, Amoblados, Cocinas. etc.               </li>
+                        <li><b>ASFALTOS:</b>               </li>
+                        <li><b>MANTENIMIENTO Y CONSTRUCCION EN GENERAL:</b> Casas, Apartamentos, Bodegas, Locales Comerciales, Fachadas y demás espacios.               </li>
+                        SUMINISTRO DE INSUMOS Y ELEMENTOS PARA OBRAS; Dotación, Alojamientos, Desechables, Equipos de Calefacción y  Ventilación, Muebles de oficina.                
+                        <li><b>SUMINISTRO DE MATERIALES PARA LA CONSTRUCCION:</b> De alta calidad y marcas reconocidas.              </li>
+                    </ul>
+                </p>
             </div>
         </div>
-    </div>
+    </main>
 
-    <div class="container-fluid" id="contacto">
+    <div class="container-fluid content-2" id="contacto">
         <div class="titulo">
-            <h2>Servicios</h2>
+            <h2>Contáctanos</h2>
         </div>
         <div class="container">
-            <div class="row py-5">
-                <div class="col-md-6">
-                    <p>INGENIO Y ARQUITECTURA S.A.S  es una empresa Colombiana,  conformada por un excelente grupo de trabajo, con el propósito de ofrecer sus servicios en el diseño, construcción, asesorías, remodelación, rehabilitación, innovación, adecuación, y acondicionamiento de construcciones antiguas y nuevas, junto con la comercialización de materiales relacionados con la construcción.</p>
-                </div>
-                <div class="col-md-6">
-                    <form action="">
-                        <input type="text">
-                        <input type="text">
-                        <hr>
-                        <button></button>
-                    </form>
-                </div>
-            </div>
+            <form id="gform" method="POST" class="pure-form pure-form-aligned" data-email="example@email.net"
+            action="https://script.google.com/macros/s/AKfycbxI7Ato0RT9n0ubnQCsxtpP7hGVvnaCijL1pyf9FfEr3ab-6mg/exec">
+          
+              <fieldset class="pure-group pure-input-1">
+                <label for="name">Nombre: </label>
+                <input id="name" name="name" placeholder="Como quieres que te llamemos" />
+          
+              </fieldset>
+          
+              <fieldset class="pure-group">
+                <label for="message">Mensaje: </label>
+                <textarea id="message" name="message" rows="10"
+                placeholder="Describe como podemos ayudarte..."></textarea>
+              </fieldset>
+          
+          
+          
+              <fieldset class="pure-group">
+                <label for="email"><em>Tu</em> Dirección de correo electrónico:</label>
+                <input id="email" name="email" type="email" value=""
+                required placeholder="tu.nombre@email.com"/>
+          
+                <span id="email-invalid" style="display:none">
+                  Debe ser una dirección de qcorreo valida</span>
+              </fieldset>
+          
+          
+          
+              <fieldset class="pure-group">
+                <label for="numero">Número de telefono: </label>
+                <input id="numero" name="numero" placeholder="355 555 5555" />
+              </fieldset>
+          
+              <button class="button-success pure-button button-xlarge" style="float:right;">
+                <i class="fa fa-paper-plane"></i>&nbsp;Enviar</button>
+            </form>
+
+            <div style="display:none;" id="thankyou_message">
+
+                <h2>¡Gracias por ponerte en contacto, nos aseguraremos de llamarte cuanto antes! </h2>
+            
+              </div>
         </div>
     </div>
-
+    <footer>
+        <p>Carrera 70C #5A - 81 Cel: (313) 259 5457 - (310) 866 0833 / (312) 568 0865</p>
+        <span>Todos los derechos reservados 2020. Ingenio y Arquitectura SAS </span>
+    </footer>
     <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js">   </script>
+      <!-- Submit the Form to Google Using "AJAX" -->
 
+    <script src="js/handle-submit.js"></script>
     <script src="js/scripts.js"></script>
 </body>
 </html>
