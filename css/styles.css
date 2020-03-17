@@ -1,11 +1,13 @@
 @font-face {
   font-family: 'Futura';
   src: url(../assets/Futura/FuturaPTCondBold.otf);
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'PT Sans Narrow';
   src: url(../assets/PT_Sans_Narrow/PT_Sans-Narrow-Web-Regular.ttf);
+  font-display: swap;
 }
 
 body {
