@@ -69,13 +69,26 @@ nav#main-navbar{
         display:flex;
         width:80vw;
         justify-content: flex-end;
+        align-items: stretch;
+        a{
+            text-decoration: none;
+            cursor: pointer;
+            color: white;
+            display:flex;
+            align-items: flex-end;
+            &:visited{
+                color:grey;
+            }
+        }
         li{
+        
             text-transform: capitalize;
             padding:5px 15px;
             margin-right:1rem;
             font-family: 'Futura';
             font-size:1.4rem;
             align-self: flex-end;
+
             cursor:pointer;
             &.active{
                 border-bottom:2px solid $amarillo;
@@ -434,6 +447,7 @@ footer{
                 font-size:1.1rem;
                 margin:0;
                 line-height: 1;
+                margin-right:3px;
             }
         }
         &.dark .logo-header{

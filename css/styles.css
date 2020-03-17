@@ -95,6 +95,25 @@ nav#main-navbar ul {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+nav#main-navbar ul a {
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+nav#main-navbar ul a:visited {
+  color: grey;
 }
 
 nav#main-navbar ul li {
@@ -560,6 +579,7 @@ footer a:visited {
     font-size: 1.1rem;
     margin: 0;
     line-height: 1;
+    margin-right: 3px;
   }
   nav#main-navbar.dark .logo-header {
     display: none;
