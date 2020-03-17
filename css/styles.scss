@@ -509,17 +509,19 @@ footer{
         .content-1{
             background-size: 150%;
             background-position:-10vw 50%;
+            background-attachment: fixed;
         }
         .content-2{
             background-size: 150%;
             background-position:10vw 50%;
+            background-attachment: fixed;
         }
         .invertir-orden{
             flex-direction: column-reverse;
         }
         .contenedor-img-sol{
             margin:2rem auto 0.5rem;
-            margin-right: -2rem;;
+            margin-right: -2rem;
         }
 
         #porque{
