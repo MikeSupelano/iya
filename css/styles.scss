@@ -107,6 +107,10 @@ nav#main-navbar{
     }
 }
 
+.col-md-6{
+    flex:50%;
+}
+
 .hero{
     min-height:100vh;
     background-color: black;
@@ -117,9 +121,6 @@ nav#main-navbar{
     color: #ffffffee;
     width: 100%;
     display:flex;
-    .col-md-6{
-        flex:50%;
-    }
     .logo{
         display: flex;
         img{
@@ -392,6 +393,14 @@ footer{
         display:block;
         font-size:0.8rem;
     }
+    a{
+        text-decoration: none;
+        color:white;
+        cursor:pointer;
+        &:visited{
+            color:gray;
+        }
+    }
 }
 
 .delay-p1{
@@ -408,4 +417,122 @@ footer{
 }
 .delay-p5{
     animation-delay: .5s;
+}
+
+@media screen and (max-width:880px){
+    nav#main-navbar{
+        width:100vw;
+        top:1%;
+        left:0;
+        ul{
+            width:100%;
+            justify-content:space-evenly;
+            margin:0;
+            padding:0 0.5rem;
+            li{
+                text-align: center;
+                font-size:1.1rem;
+                margin:0;
+                line-height: 1;
+            }
+        }
+        &.dark .logo-header{
+            display:none;
+        }
+    }
+
+    .hero{
+        background-image:linear-gradient( #000000aa, #000000ee), url(../img/logo-up.svg);
+        background-repeat: no-repeat;
+        background-size: 150%;
+        background-position: 50% 50vh;
+        flex-wrap: wrap;
+        .logo img{
+            width:75%;
+            height: auto;
+            padding: 0;
+            padding-bottom: 2rem;
+            margin:0 auto;
+            margin-top:20vh;
+            border-right:none;
+            border-bottom: 5px solid $amarillo;
+        }
+
+        .content{
+            align-items: center;
+            margin-bottom: 8vh;
+            h3{
+                font-size:1.5rem;
+                padding:0.2rem;
+                margin-left:0;
+                &.resalte{
+                    line-height: 1;
+                    padding:0.5rem;
+                }
+            }
+        }        
+    }
+    .col-md-6{
+        flex: 100%;
+    }
+    body {
+        font-size: calc(14px + 0.7vw);
+        .container{
+            padding:0 5%;
+        }
+        .container-fluid {
+            padding: 0 5%;
+            .row{
+                .col-md-4, .col-md-8, .col-md-6{
+                    flex:100%;
+                    padding:0;            
+                }                
+            }
+        }
+        .py-5{
+            padding:2rem 0;
+        }
+        .content-1{
+            background-size: 150%;
+            background-position:-10vw 50%;
+        }
+        .content-2{
+            background-size: 150%;
+            background-position:10vw 50%;
+        }
+        .invertir-orden{
+            flex-direction: column-reverse;
+        }
+        .contenedor-img-sol{
+            margin:2rem auto 0.5rem;
+            margin-right: -2rem;;
+        }
+
+        #porque{
+            .titulo h2, .resaltar, h3{
+                line-height: 1.1;
+            }
+
+            ul li{
+                margin:0.3rem auto;
+            }
+        }        
+    }
+
+    main#servicios{
+        .card{
+            margin:0;
+            margin-bottom: 1rem;
+            max-width: 100%;
+            .nombre{
+                height: auto;
+                line-height: 1.1;
+                padding:0.2rem 0;
+            }
+        }
+        ul{
+            width: 90%;
+            columns:1;
+        }
+    }
 }
